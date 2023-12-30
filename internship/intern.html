@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form onsubmit="take()" method="get">
+        <h1>Student Form</h1>
+        <div>
+            <label for="Name">Enter Your Name:</label>
+            <input type="text" placeholder="Enter Name" id="name">
+        </div>
+        
+        <div>
+            <label for="Name">Enter Your RollNumber:</label>
+            <input type="text" placeholder="Enter RollNumber" id="Roll">
+        </div>
+        
+        <div>
+            <label for="Name">Enter Your Email:</label>
+            <input type="email" placeholder="Enter Email" id="email">
+        </div>
+        
+        <div>
+            <label for="Name">Enter Your Password:</label>
+            <input type="password" placeholder="Enter Password" id="Pass">
+        </div>
+        
+        <div><button type="submit">SUBMIT</button></div>
+        
+    </form>
+    <script>
+
+        function take(){
+            var name = document.getElementById("name").value;
+            
+            var Roll = document.getElementById("Roll").value;
+            
+            
+            var Email = document.getElementById("email").value;
+            
+            
+            var pass = document.getElementById("Pass").value;
+            
+            document.write("<h1>Your name is:"+name + "</h1>");  
+            document.write("<h1>Your Roll Number is:"+Roll+ "</h1>");  
+            document.write("<h1>Your Email is:"+Email + "</h1>");  
+            document.write("<h1>Your Password is:"+pass+ "</h1>");  
+        }
+
+
+    </script>
+</body>
+</html>
